@@ -1,0 +1,130 @@
+\documentclass[12pt, onecolumn, letterpaper, oneside]{book}
+
+\usepackage{authblk}
+\usepackage[autostyle]{csquotes}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[sc]{titlesec}
+
+\usepackage[square,numbers,sectionbib]{natbib}
+\usepackage{chapterbib}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+
+\usepackage{tikz}
+
+\usepackage{wasysym}
+
+\titleformat{\chapter}[display]
+  {\rmfamily\scshape\bfseries}{}{0pt}{\Large}
+\titleformat{\section}[display]
+  {\scshape}{}{0pt}{\large}
+  
+ \usepackage{scrextend}
+ \interfootnotelinepenalty=10000
+
+\usepackage{fancyvrb}
+\usepackage{suffix}
+
+\newcommand\chapterauthor[1]{\authortoc{#1}\printchapterauthor{#1}}
+\WithSuffix\newcommand\chapterauthor*[1]{\printchapterauthor{#1}}
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{}{\uppercase{\itshape #1}}}
+\fancyhf{}
+\fancyhead[L]{\rightmark}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+ 
+ \renewcommand\thefigure{\arabic{figure}}
+
+\makeatletter
+\newcommand{\printchapterauthor}[1]{%
+  {\parindent0pt\vspace*{-25pt}%
+  \linespread{1.1}\large\scshape#1%
+  \par\nobreak\vspace*{35pt}}
+  \@afterheading%
+}
+\newcommand{\authortoc}[1]{%
+  \addtocontents{toc}{\vskip-10pt}%
+  \addtocontents{toc}{%
+    \protect\contentsline{chapter}%
+    {\hskip1.3em\mdseries\scshape\protect\scriptsize#1}{}{}}
+  \addtocontents{toc}{\vskip5pt}%
+}
+\makeatother
+
+\title{No Governor\\
+		\large \textit{a journal of anarchist ideas}\\
+		\vspace{2\baselineskip}
+		\normalsize ``There is no governor present anywhere.'' --- Chuang Tzu
+		}
+\author{Vol. I, No. 3.\\Editor Robert Shea}
+\date{Spring, 1976}
+
+\fancyfoot[L]{Spring, 1976}
+\fancyfoot[R]{No Governor}
+
+%\setlength\parindent{0pt}
+    \setlength{\columnsep}{1cm}
+
+\begin{document}
+\sloppy
+
+\maketitle
+
+\vspace*{\fill}
+
+\begin{flushright}
+\emph{Re-edited using \LaTeX $\,$ for the 'Patafizikhood of Eris Esoteric.\\
+If you have any comments or detected any mistake, please contact us at:\\
+anarchao--at--discordia--dot--fr.\\}
+\end{flushright}
+
+\begin{flushright}
+\emph{Thanks to Mike Shea for giving us permission to do this.}
+\end{flushright}
+
+\vspace*{\fill}
+
+\tableofcontents
+
+\include{seminar_on_anarchist_ideology}
+
+\include{jean-paul_sartre}
+
+\include{ode_to_amazon_nation}
+
+\include{personal_differences_in_organization}
+
+\include{secret_teachings_of_george_washington}
+
+\include{the_ether_vibrates}
+
+\include{the_frying_pan}
+
+\include{dialectic_of_morality}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
